@@ -6,6 +6,10 @@
 
 *The authors have used VQ-GAN, which is a variant of the original VQ-VAE that uses a discriminator and perpetual loss to keep good perceptual quality at an increased compression rate. It was in a two-step manner by firstly, training the VQ-GAN and learning the quantized codebook then training the autoregressive transformer using the quantized codebook as sequential input to the transformer.*
 
+## Implementation
+
+Access the colab file at: [VQ-GANS.ipynb](https://colab.research.google.com/drive/16cpolPRO9-i7dFQJrhbiDPymU0I1Wnba?usp=sharing)
+
 ## VQ-VAE
 
 *VQGAN was proposed, as a variant of the original VQVAE.*
@@ -19,7 +23,3 @@
 ![](https://miro.medium.com/v2/resize:fit:828/format:webp/1*NHUjAHfM3K6mZn-Q1PPJMw.png)
 
 *The Transformer part learns which code book vectors could make sense together and which not and after that it can generate new possible code book vectors which it thinks could go along together. We are using a transformer because our code book vectors representing an image is just a sequence and transformers are really good at sequence tasks.*
-
-## Implementation
-
-Access the colab file at: [VQ-GANS.ipynb](https://colab.research.google.com/drive/16cpolPRO9-i7dFQJrhbiDPymU0I1Wnba?usp=sharing)
